@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samson Swaraj Quadros — AI Engineer</title>
-<meta name="description" content="AI engineer building and optimising production Generative AI — from silicon-level ML inference (IEEE-published) to cloud-deployed GenAI platforms.">
+<title>Samson Swaraj Quadros, AI Engineer</title>
+<meta name="description" content="AI engineer building and optimising production Generative AI, from silicon-level ML inference (IEEE-published) to cloud-deployed GenAI platforms.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -43,10 +43,10 @@
     font-size:clamp(2.4rem,6vw,4rem); line-height:1.02; letter-spacing:-.02em;
     margin:.35em 0 .25em;
   }
-  .hero h1 .accent{color:var(--copper-lt);}
   .hero .lede{
-    font-size:clamp(1.05rem,2.4vw,1.3rem); color:#D6DDE6; max-width:30ch; margin:0 0 30px;
+    font-size:clamp(1.05rem,2.4vw,1.3rem); color:#D6DDE6; max-width:32ch; margin:0 0 30px;
   }
+  .hero .lede .accent{color:var(--copper-lt);}
   .cta-row{display:flex; flex-wrap:wrap; gap:12px;}
   .btn{
     font-family:"IBM Plex Mono",monospace; font-size:13.5px; letter-spacing:.02em;
@@ -57,7 +57,7 @@
   .btn.solid{background:var(--copper); border-color:var(--copper); color:#1a0f04; font-weight:500;}
   .btn.solid:hover{background:var(--copper-lt); border-color:var(--copper-lt);}
 
-  /* signature: the stack, silicon -> cloud */
+  /* signature: the stack, silicon to cloud */
   .stack{display:flex; flex-direction:column-reverse; gap:9px; align-self:stretch; justify-content:center;}
   .layer{
     position:relative; font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.06em;
@@ -82,7 +82,7 @@
   .metric .l{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.05em; color:var(--muted-d); margin-top:7px;}
 
   /* ---------- SECTIONS ---------- */
-  section{padding:62px 0; border-bottom:1px solid var(--line);}
+  section{padding:92px 0 60px; border-bottom:1px solid var(--line);}
   .sec-head{display:flex; align-items:baseline; gap:16px; margin-bottom:34px;}
   .sec-head h2{
     font-family:"Space Grotesk",sans-serif; font-weight:600; font-size:1.5rem;
@@ -90,7 +90,19 @@
   }
   .sec-num{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--copper); padding-top:4px;}
 
-  .lead-line{font-size:1.18rem; line-height:1.55; max-width:60ch; margin:0 0 6px;}
+  .lead-line{font-size:1.18rem; line-height:1.55; max-width:62ch; margin:0 0 16px;}
+  .body-p{max-width:62ch; color:#2A313C; margin:0 0 16px;}
+
+  /* AI capability list */
+  .caps{
+    display:grid; grid-template-columns:1fr 1fr; gap:10px 28px; margin-top:26px;
+    border-top:1px solid var(--line); padding-top:24px;
+  }
+  .cap{display:flex; gap:11px; align-items:flex-start; font-size:.96rem; color:#2A313C;}
+  .cap .k{
+    font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--copper); padding-top:3px;
+    white-space:nowrap;
+  }
 
   /* work cards */
   .work{display:grid; gap:0;}
@@ -118,18 +130,18 @@
   }
   .note b{font-weight:600;}
 
-  /* research */
-  .pub .top{display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; align-items:baseline;}
-  .pub h3{font-family:"Space Grotesk",sans-serif; font-size:1.15rem; margin:0;}
-  .pub .venue{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--muted); margin:5px 0 12px;}
-  .pub .when{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--copper); white-space:nowrap;}
+  /* research + education shared */
+  .pub .top, .edu-item .top{display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; align-items:baseline;}
+  .pub h3, .edu-item h3{font-family:"Space Grotesk",sans-serif; font-size:1.15rem; margin:0;}
+  .pub .venue, .edu-item .venue{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--muted); margin:5px 0 12px;}
+  .pub .when, .edu-item .when{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--copper); white-space:nowrap;}
+  .edu-item p{max-width:62ch; color:#2A313C; margin:0;}
 
   /* contact / footer */
-  footer{background:var(--slate); color:var(--paper); padding:58px 0; border:none;}
+  footer{background:var(--slate); color:var(--paper); padding:64px 0; border:none;}
   footer h2{font-family:"Space Grotesk",sans-serif; font-size:1.6rem; margin:0 0 8px;}
   footer p.sub{color:var(--muted-d); margin:0 0 26px; font-size:1rem;}
   .links{display:flex; flex-wrap:wrap; gap:14px;}
-  .edu{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--muted-d); margin-top:30px;}
 
   @media (max-width:760px){
     .hero-grid{grid-template-columns:1fr;}
@@ -137,11 +149,12 @@
     .metrics .wrap{grid-template-columns:1fr 1fr; gap:22px;}
     .item{grid-template-columns:1fr; gap:12px;}
     .skills{grid-template-columns:1fr;}
+    .caps{grid-template-columns:1fr;}
+    section{padding:72px 0 52px;}
   }
   @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important; scroll-behavior:auto;}}
   a:focus-visible,.btn:focus-visible{outline:2px solid var(--copper-lt); outline-offset:3px;}
 
-  /* gentle load reveal */
   .reveal{opacity:0; transform:translateY(10px); animation:rise .7s ease forwards;}
   .reveal.d1{animation-delay:.08s;} .reveal.d2{animation-delay:.16s;} .reveal.d3{animation-delay:.24s;}
   @keyframes rise{to{opacity:1; transform:none;}}
@@ -152,30 +165,28 @@
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow reveal">AI Engineer · Bengaluru, India</span>
+      <span class="eyebrow reveal">AI Engineer, Bengaluru, India</span>
       <h1 class="reveal d1">Samson Swaraj<br>Quadros</h1>
-      <p class="lede reveal d2">I build and speed up production AI — from the <span style="color:var(--copper-lt)">logic gate</span> to the <span style="color:var(--copper-lt)">cloud</span>.</p>
+      <p class="lede reveal d2">I take Generative AI from prototype to production, and make it run <span class="accent">fast</span>, from the <span class="accent">logic gate</span> to the <span class="accent">cloud</span>.</p>
       <div class="cta-row reveal d3">
         <a class="btn solid" href="mailto:samsonswarajquadros@gmail.com">Email me</a>
         <a class="btn" href="https://www.linkedin.com/in/samson-quadros" target="_blank" rel="noopener">LinkedIn</a>
-        <!-- REPLACE YOUR_GITHUB below with your GitHub username -->
-        <a class="btn" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
     <div class="stack reveal d2" aria-hidden="true">
       <div class="stack-label">stack</div>
-      <div class="layer" data-i="0">SILICON · RTL</div>
+      <div class="layer" data-i="0">SILICON, RTL</div>
       <div class="layer" data-i="1">FIRMWARE</div>
       <div class="layer" data-i="2">INFERENCE</div>
-      <div class="layer" data-i="3">API · SERVICE</div>
-      <div class="layer" data-i="4">CLOUD · GENAI</div>
+      <div class="layer" data-i="3">API, SERVICE</div>
+      <div class="layer" data-i="4">CLOUD, GENAI</div>
     </div>
   </div>
 </header>
 
 <div class="metrics">
   <div class="wrap">
-    <div class="metric"><div class="n">0 → 100+</div><div class="l">USERS, PROD PLATFORM</div></div>
+    <div class="metric"><div class="n">0 to 100+</div><div class="l">USERS, PROD PLATFORM</div></div>
     <div class="metric"><div class="n">4,000+</div><div class="l">AI IMAGES GENERATED</div></div>
     <div class="metric"><div class="n">8</div><div class="l">MODELS BENCHMARKED</div></div>
     <div class="metric"><div class="n">98%+</div><div class="l">FASTER ML INFERENCE (FPGA)</div></div>
@@ -185,8 +196,18 @@
 <main>
   <section id="about" class="wrap">
     <div class="sec-head"><span class="sec-num">01</span><h2>What I do</h2></div>
-    <p class="lead-line">I'm an AI engineer who ships Generative AI in production, not just in notebooks. At an early-stage startup I owned a GenAI product end to end — model integration and fine-tuning, inference pipelines, and the full backend that runs them reliably at scale.</p>
-    <p style="max-width:60ch; color:#2A313C;">My background runs unusually deep on the engineering side: before the cloud work, my IEEE-published research put a neural network on bare silicon (FPGA). That range — from how a model runs on hardware up to how it serves real users — is how I think about building AI that's both capable and fast.</p>
+    <p class="lead-line">I'm an AI engineer who ships Generative AI in production, not just in notebooks. I integrate and fine-tune generative models, design the inference pipelines that serve them, and build the backend that runs those AI workloads reliably at scale.</p>
+    <p class="body-p">Concretely, that means fine-tuning diffusion models with PyTorch and Hugging Face, integrating LLM and generative APIs, and engineering multi-model, multi-provider inference pipelines tuned for GPU utilisation and latency. I treat evaluation as a first-class job: I built a benchmarking framework across 8 generative models so the model that shipped was a measured choice, not a guess.</p>
+    <p class="body-p">My foundation runs deep on the systems side. Before the cloud work, my IEEE-published research put a neural network on bare silicon (FPGA), which is where I learned to obsess over inference speed and efficiency. That range, from how a model runs on hardware up to how it serves real users, shapes how I build AI that is both capable and fast.</p>
+
+    <div class="caps">
+      <div class="cap"><span class="k">model</span><span>Generative model integration and fine-tuning (diffusion models, LLM and generative APIs)</span></div>
+      <div class="cap"><span class="k">pipeline</span><span>Inference pipeline design: multi-model, multi-provider, parallel execution for throughput and latency</span></div>
+      <div class="cap"><span class="k">eval</span><span>Model evaluation and benchmarking to drive production technology decisions</span></div>
+      <div class="cap"><span class="k">prompt</span><span>Prompt engineering for reliable, repeatable model behaviour</span></div>
+      <div class="cap"><span class="k">deploy</span><span>Production deployment of AI workloads on FastAPI, Docker, AWS and GCP, with CI/CD and monitoring</span></div>
+      <div class="cap"><span class="k">scale</span><span>Async processing, Redis-backed task queues, and real-time updates for long-running AI jobs</span></div>
+    </div>
   </section>
 
   <section id="work" class="wrap">
@@ -196,12 +217,12 @@
       <div class="item">
         <div class="meta">
           <div class="role">Junior Product Engineer</div>
-          <div class="when">Palettelab · 2025–2026</div>
+          <div class="when">Palettelab, 2025 to 2026</div>
           <span class="tag">Production GenAI</span>
         </div>
         <div>
           <h3>Virtual Try-On Platform</h3>
-          <p>Built and shipped a production Generative-AI platform from zero to 100+ users and 4,000+ AI-generated images. Fine-tuned diffusion models (PyTorch, Hugging Face) and integrated generative-AI APIs, with inference pipelines orchestrating multiple models and providers — using parallel execution to improve GPU utilisation and cut latency.</p>
+          <p>Built and shipped a production Generative-AI platform from zero to 100+ users and 4,000+ AI-generated images. Fine-tuned diffusion models (PyTorch, Hugging Face) and integrated generative-AI APIs, with inference pipelines orchestrating multiple models and providers, using parallel execution to improve GPU utilisation and cut latency.</p>
           <div class="stackrow">
             <span class="chip">FastAPI</span><span class="chip">PyTorch</span><span class="chip">Hugging Face</span>
             <span class="chip">Docker</span><span class="chip">AWS</span><span class="chip">GCP</span>
@@ -213,8 +234,8 @@
       <div class="item">
         <div class="meta">
           <div class="role">Backend / R&D Intern</div>
-          <div class="when">Palettelab · 2025</div>
-          <span class="tag">Prototype → Demo</span>
+          <div class="when">Palettelab, 2025</div>
+          <span class="tag">Prototype to Demo</span>
         </div>
         <div>
           <h3>Palette Pool Planner</h3>
@@ -233,10 +254,10 @@
     <div class="sec-head"><span class="sec-num">03</span><h2>Research</h2></div>
     <div class="top">
       <h3>A Verilog-based Approach for Object Detection using CNN</h3>
-      <span class="when">IEEE · Mar 2025</span>
+      <span class="when">IEEE, Mar 2025</span>
     </div>
-    <div class="venue">2024 5th IEEE Global Conference for Advancement in Technology (GCAT) · indexed in IEEE</div>
-    <p style="max-width:62ch; color:#2A313C;">Built a CNN inference engine in Verilog for FPGA/ASIC, reaching 95% object-detection accuracy with 98%+ faster runtime than software baselines, through a pipelined RTL architecture and low-level performance optimisation — ML inference on hardware without a dedicated AI accelerator.</p>
+    <div class="venue">2024 5th IEEE Global Conference for Advancement in Technology (GCAT), indexed in IEEE</div>
+    <p class="body-p">Built a CNN inference engine in Verilog for FPGA/ASIC, reaching 95% object-detection accuracy with 98%+ faster runtime than software baselines, through a pipelined RTL architecture and low-level performance optimisation. ML inference on hardware without a dedicated AI accelerator.</p>
     <div class="stackrow" style="margin-top:6px;">
       <span class="chip">Verilog</span><span class="chip">FPGA / ASIC</span><span class="chip">RTL pipelining</span><span class="chip">Edge ML</span>
     </div>
@@ -246,13 +267,25 @@
     <div class="sec-head"><span class="sec-num">04</span><h2>Skills</h2></div>
     <div class="skills">
       <div class="skill"><h4>Languages</h4><p>Python (Advanced), Golang (Proficient), Java, C</p></div>
-      <div class="skill"><h4>Generative AI</h4><p>LLM / generative APIs (OpenAI / GPT), prompt engineering, fine-tuning (PyTorch, Hugging Face), inference pipelines, model evaluation &amp; benchmarking</p></div>
-      <div class="skill"><h4>Backend &amp; Systems</h4><p>FastAPI, REST APIs, microservices, async I/O, SSE, system &amp; API design</p></div>
-      <div class="skill"><h4>Cloud &amp; DevOps</h4><p>AWS, GCP, Docker, CI/CD, Git, production monitoring &amp; incident response</p></div>
-      <div class="skill"><h4>Data</h4><p>MongoDB (schema &amp; data design), Redis (caching &amp; task queues)</p></div>
+      <div class="skill"><h4>Generative AI</h4><p>LLM and generative APIs (OpenAI / GPT), prompt engineering, fine-tuning (PyTorch, Hugging Face), inference pipeline design, model evaluation and benchmarking</p></div>
+      <div class="skill"><h4>Backend &amp; Systems</h4><p>FastAPI, REST APIs, microservices, async I/O, SSE, system and API design</p></div>
+      <div class="skill"><h4>Cloud &amp; DevOps</h4><p>AWS, GCP, Docker, CI/CD, Git, production monitoring and incident response</p></div>
+      <div class="skill"><h4>Data</h4><p>MongoDB (schema and data design), Redis (caching and task queues)</p></div>
       <div class="skill"><h4>Foundations</h4><p>Data structures, algorithms, distributed systems, OOP, system design</p></div>
     </div>
-    <div class="note"><b>Currently going deeper on:</b> retrieval-augmented generation (RAG), vector search, and agentic LLM workflows — the application layer on top of the production AI systems I already build.</div>
+    <div class="note"><b>Currently going deeper on:</b> retrieval-augmented generation (RAG), vector search, and agentic LLM workflows, the application layer on top of the production AI systems I already build.</div>
+  </section>
+
+  <section id="education" class="wrap">
+    <div class="sec-head"><span class="sec-num">05</span><h2>Education</h2></div>
+    <div class="edu-item">
+      <div class="top">
+        <h3>B.Tech, Electronics and Computer Engineering</h3>
+        <span class="when">2020 to 2024</span>
+      </div>
+      <div class="venue">Amrita School of Engineering, Bengaluru, CGPA 9.09</div>
+      <p>Coursework across data structures, algorithms, distributed systems, and digital hardware design, the shared foundation behind both my AI engineering work and my FPGA research.</p>
+    </div>
   </section>
 </main>
 
@@ -260,18 +293,15 @@
   <div class="wrap">
     <span class="eyebrow" style="color:var(--copper-lt)">Get in touch</span>
     <h2>Let's build something that ships.</h2>
-    <p class="sub">Open to AI / backend engineering roles. Based in Bengaluru.</p>
+    <p class="sub">Open to AI and backend engineering roles. Based in Bengaluru.</p>
     <div class="links">
       <a class="btn solid" href="mailto:samsonswarajquadros@gmail.com">samsonswarajquadros@gmail.com</a>
       <a class="btn" href="https://www.linkedin.com/in/samson-quadros" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">GitHub</a>
     </div>
-    <div class="edu">B.Tech, Electronics &amp; Computer Engineering · Amrita School of Engineering · CGPA 9.09 · 2020–2024</div>
   </div>
 </footer>
 
 <script>
-  // light the stack layers in sequence (silicon -> cloud), once, respecting reduced motion
   (function(){
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var layers = Array.prototype.slice.call(document.querySelectorAll('.layer'));
